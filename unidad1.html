@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Unidad 1</title>
+
+    <!-- SCORM -->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<link rel="stylesheet" href="css/magnify.css">
+    <!-- Theme CSS -->
+    <link href="css/virtual.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+
+<body onLoad="javascript:initi(function(){activen();});">
+
+    <div id="introintro">
+        <div id="introintro2" class="text-center">
+            <div id="fondointro">
+                <div id="loader">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="lading"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="todotodo" style="display:none;">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="false" data-interval="false">
+            <div class="contenido">
+                <div class="carousel-inner">
+
+
+				 		<!--Bienvenida-->
+                    <div id="bienve" class="item active">
+          	  <div class="colu-a col-sm-4 col-12" style="background-image:url('img/u1/1_intro.jpg')"></div>
+              <div class="colu-b col-sm-8 col-12" style="height:100%;">
+                <div class="barratop">
+                  <h4 class="box-title" aria-expanded="false">
+                    <i class="fas fa-video"></i>
+                    Introducción
+                  </h4>
+                  <button id="bienve-body-b" class="fscreen" onclick="toggleFullscreen('bienve-body','bienve-body-b');">
+                    Ampliar <i class="fas fa-expand-arrows-alt"></i>
+                  </button>
+                </div>
+                <div id="bienve-body" class="modal-body scrollbar-dusty-grass2">
+
+					    <iframe width="560" height="315" src="https://www.youtube.com/embed/z8UdK9HSlic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                  <!--accordion 1-->
+                  <div id="pp1" class="panel box box_ed collapsed">
+
+                  <h4 class="box-title3" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"> <a style="color: #04187e;"><em class="glyphicon glyphicon-log-in" aria-hidden="true"></em> Ver lectura de introducción</a></h4>
+
+					 <div id="collapseOne" class="panel-collapse collapse" >
+
+					 <p align="left" style="margin-top:10px;margin: 20px;color: #000306;"><em class="glyphicon glyphicon-headphones" aria-hidden="true" style="color: #2593db"></em> Ejemplo </p>
+
+
+	               </div>
+
+                  </div>
+
+
+                </div>
+                <div class="barrabot"></div>
+              </div>
+            </div>
+
+                    <!--competencias-->
+                    <div class="item">
+                        <div class="colu-a col-sm-4 col-12" style="background-image:url('img/u1/2_competencias.jpg')"></div>
+                        <div class="colu-b col-sm-8 col-12" style="height:100%;">
+                            <div class="barratop">
+                                <h4 class="box-title" aria-expanded="false">
+                        <i class="fas fa-flag-checkered"></i>
+                        Competencias
+                      </h4>
+                                <button id="compe-b" class="fscreen" onclick="toggleFullscreen('compe','compe-b');">
+                                    Ampliar <i class="fas fa-expand-arrows-alt"></i>
+                                </button>
+
+                            </div>
+
+							<div id="compe" class="modal-body scrollbar-dusty-grass2">
+
+								<h4 class="box-title" aria-expanded="false" style=" background-color: #00adef;">
+                                <i class="fas fa-flag-checkered"></i>
+                               Titulo 1:
+                              </h4>
+
+                              <p align="left" style="margin-top:10px;background-color: #fff;padding: 10px;border-radius: 4px;"> <strong> 1.</strong> Ejemplo 1  </p>
+
+								
+
+									
+
+                            </div>
+
+
+
+                            <div class="barrabot"></div>
+                        </div>
+                    </div>
+
+						 <!--cotenidos4-->
+		    		<div class="item">
+              <div class="colu-a col-sm-4 col-12" style="background-image:url('img/u1/3_contenidos.jpg')"></div>
+              <div class="colu-b col-sm-8 col-12" style="height:100%;">
+                <div class="barratop">
+                   <h4 class="box-title" aria-expanded="false"> <em class="glyphicon glyphicon-zoom-in "></em> Contenidos </h4>
+                  <button id="conte4-b" class="fscreen" onclick="toggleFullscreen('conte4','conte4-b');">
+                     Ampliar <i class="fas fa-expand-arrows-alt"></i>
+                  </button>
+                </div>
+
+				          <p align="left" style="margin-top:10px;background-color: #fff;padding: 10px;border-radius: 4px;"> <strong> 1.</strong> Ejemplo 1  </p>
+
+                <div class="barrabot"></div>
+              </div>
+            </div>
+
+						 
+                    <!--actividades-->
+                    <div class="item scrollbar-dusty-grass2">
+                        <div class="colu-a col-sm-4 col-12" style="background-image:url('img/u1/4_actividades.jpg')"></div>
+                        <div class="colu-b col-sm-8 col-12" style="height:90%;">
+                            <div class="barratop">
+                                <h4 class="box-title">
+                          <i class="fas fa-flag"></i>
+                          Actividades
+                        </h4>
+                                <button id="activ-b" class="fscreen" onclick="toggleFullscreen('activ','activ-b');">
+                                    Ampliar <i class="fas fa-expand-arrows-alt"></i>
+                                </button>
+
+                            </div>
+                            <div id="activ" class="modal-body scrollbar-dusty-grass2">
+
+                                <p align="left" style="background-color: #74bb1b; color: #fff; padding: 10px;border-radius: 4px;"> Para continuar con el curso, diríjase a la sección tareas, donde encontrará las actividades correspondientes a cada unidad. Siga las indicaciones y haga los aportes en el foro.</p>
+
+                                <div class="col-md-12 col-sm-6 col-xs-12 leftc"><img src="img/actividadb.jpg" alt="competencias" width="99%" height="auto">
+                                </div>
+                            </div>
+                            <div class="barrabot"></div>
+                        </div>
+                    </div>
+
+
+						<!--Glosario-->
+					<div class="item scrollbar-dusty-grass2">
+                        <div class="colu-a col-sm-4 col-12" style="background-image:url('img/u1/5_glosario.jpg')"></div>
+                        <div class="colu-b col-sm-8 col-12" style="height:100%;">
+                            <div class="barratop">
+                                <h4 class="box-title">
+                          <i class="fas fa-flag"></i>
+                          Recursos
+                        </h4>
+                                <button id="glosa-b" class="fscreen" onclick="toggleFullscreen('glosa','glosa-b');">
+                                    Ampliar <i class="fas fa-expand-arrows-alt"></i>
+                                </button>
+
+                            </div>
+                            <div id="glosa" class="modal-body scrollbar-dusty-grass2">
+
+                                  <p align="left" style="margin-top:10px;background-color: #fff;padding: 10px;border-radius: 4px;"><em class="glyphicon glyphicon-ok" aria-hidden="true" style="color: #2593bd"></em> Recursos ejemplo </p>
+
+
+								
+
+
+
+                            </div>
+
+
+                            <div class="barrabot"></div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <!-- controles-->
+         <div class="col-sm-4 col-12"></div>
+        <div class="col-sm-8 col-12">
+                <ol id="indicat" class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active pav"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1" class="pav"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2" class="pav"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3" class="pav"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4" class="pav"></li>
+			
+                    
+
+                </ol>
+
+            </div>
+      </div>
+
+
+            <div id="controles">
+                <div class="col-sm-12 col-12" style="height:100%;margin-top: -150px;">
+                    <a id="le" class="left carousel-control control pav" href="#carousel-example-generic" data-slide="prev" onClick="activen();return false;">
+                        <div class="iesleft"><i class="fas fa-chevron-left shake-horizontall"></i></div>
+                    </a>
+                    <a id="ri" class="right carousel-control control pav" href="#carousel-example-generic" data-slide="next" onClick="activen();return false;">
+                        <div class="iesright"><i class="fas fa-chevron-right shake-horizontald"></i></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    <!-- virtual -->
+    <script src="js/virtual.js"></script>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+    <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+
+
+  <script src="js/jquery.magnify.js"></script>
+  <script src="js/jquery.magnify-mobile.js"></script>
+
+
+	<script>
+    $(document).ready(function() {
+      $('.zoom').magnify();
+    });
+  </script>
+
+    <script>
+        xo = document.querySelectorAll("#carru > li");
+        for (i = 0; i < xo.length; i++) {
+            xo[i].addEventListener("click", function() {
+                activen();
+            });
+        }
+    </script>
+
+    <script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
+    <script type="text/javascript">
+        var playersound = SC.Widget("player");
+
+        $(document).on('touchstart click', '.pav', function(event) {
+            playersound.pause();
+        });
+    </script>
+
+    <!-- vimeo -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script type="text/javascript">
+        var player1 = new Vimeo.Player("p1");
+        $(document).on('touchstart click', '.pav', function(event) {
+            player1.pause();
+        });
+        var player2 = new Vimeo.Player("p2");
+        $(document).on('touchstart click', '.pav', function(event) {
+            player2.pause();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).on('click', '.linkacc', function(event) {
+
+            var link = $(this).attr('data-ruta');
+            LaunchContent(link);
+
+        });
+
+        var Safari = (navigator.appVersion.indexOf("Safari") >= 0);
+
+        var g_bChromeless = false;
+        var g_bResizeable = false;
+        var g_nContentWidth = 980;
+        var g_nContentHeight = 620;
+
+        var g_strBrowserSize = "optimal";
+
+        function LaunchContent(ruta) {
+
+            var g_strStartPage = ruta + document.location.search;
+
+            var nWidth = screen.availWidth;
+            var nHeight = screen.availHeight;
+
+            if (nWidth > g_nContentWidth && nHeight > g_nContentHeight && g_strBrowserSize != "fullscreen") {
+                nWidth = g_nContentWidth;
+                nHeight = g_nContentHeight;
+
+                if (!Safari && !g_bChromeless) {
+                    nWidth += 17;
+                }
+            }
+
+            // Build the options string
+            var strOptions = "width=" + nWidth + ",height=" + nHeight;
+            if (g_bResizeable) {
+                strOptions += ",resizable=yes"
+            } else {
+                strOptions += ",resizable=no"
+            }
+
+            if (g_bChromeless) {
+                strOptions += ", status=0, toolbar=0, location=0, menubar=0, scrollbars=0";
+            } else {
+                strOptions += ", status=1, toolbar=1, location=1, menubar=1, scrollbars=1";
+            }
+
+            // Launch the URL
+            if (Safari) {
+                var oWnd = window.open("", "_blank", strOptions);
+                oWnd.location = g_strStartPage;
+            } else {
+                window.open(g_strStartPage, "_blank", strOptions);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
